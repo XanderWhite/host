@@ -1,0 +1,43 @@
+.intro {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+}
+
+.intro__block {
+	min-height: 622px;
+	background-color: $color-grey;
+}
+
+.intro__content {
+	padding: 75px 150px;
+	background-color: $color-dark;
+	color: $color-white;
+
+	&__container {
+		max-width: 1000px;
+		width: 100%;
+		margin: 0 auto;
+	}
+}
+.intro__title {
+	margin-bottom: 35px;
+
+    &__span {
+        color: $color-pink;
+    }
+}
+
+.intro__text {
+	margin-bottom: 50px;
+}
+.intro__btn {
+	background-color: $color-pink;
+	border-radius: 5px;
+	padding: 15px 30px;
+	text-transform: uppercase;
+
+	&:hover {
+		color: black;
+		background-color: $color-white;
+	}
+}

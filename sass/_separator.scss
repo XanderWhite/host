@@ -1,0 +1,28 @@
+.separator {
+    background-color: $color-pink;
+    color: $color-white;
+}
+.separator__inner{
+padding-top: 50px;
+padding-bottom: 50px;
+display: flex;
+gap: 30px;
+align-items: center;
+justify-content: space-between;
+}
+
+.separator__title {
+    font-size: 36px;
+}
+.separator__btn {
+    background-color: $color-black;
+    border-radius: 5px;
+    padding: 15px 30px;
+    font-size: 16px;
+    text-transform: uppercase;
+
+&:hover{
+    background-color:$color-white ;
+    color:  $color-black;
+}
+}

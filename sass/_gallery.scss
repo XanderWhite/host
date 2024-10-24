@@ -1,0 +1,30 @@
+.gallery {
+	padding-top: 50px;
+	background-color: $color-lightgrey;
+	margin-bottom: 50px;
+
+	&__title {
+		margin-bottom: 30px;
+		text-align: center;
+	}
+}
+
+#photos {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 10px;
+}
+
+.photos-img {
+	width: 100%;
+	aspect-ratio: 2/2;
+	vertical-align: top;
+	object-fit: cover;
+	cursor: pointer;
+	transition: 0.3s;
+
+	&:hover {
+		scale: 1.02;
+		box-shadow: 0 0 5px 2px rgba($color: #000000, $alpha: 0.5);
+	}
+}

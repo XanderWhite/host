@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ведущий</title>
+
+    <link rel="stylesheet" href="./css/main.min.css">
+</head>
+
+<body>
+    <div class="page">
+        <h1 class="visually-hidden">Ведущий</h1>
+
+        <!-- Header -->
+        <header class="header" id="header">
+            <div class="container header__inner">
+                <h2 class="header__logo">МАКСИВЕНТ</h2>
+
+                <nav class="nav" id="nav">
+                    <ul class="menu">
+                        <li lass="menu__item">
+                            <a class="menu__link " href="#" data-scroll="#home">Главная</a>
+                        </li>
+                        <li lass="menu__item">
+                            <a class="menu__link" href="#" data-scroll="#services">Услуги</a>
+                        </li>
+                        <li lass="menu__item">
+                            <a class="menu__link" href="#" data-scroll="#reviews">Отзывы</a>
+                        </li>
+                        <li lass="menu__item">
+                            <a class="menu__link" href="#" data-scroll="#contacts">Контакты</a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <!-- <button class="nav__toggle" id="nav-toggle" type="button">
+                    <span class="nav__toggle__span">Menu</span>
+                </button> -->
+            </div>
+        </header> <!-- /.header -->
+
+        <main class="main">
+            <!-- Intro -->
+            <section class='intro'>
+                <div class="intro__block">
+
+                </div>
+                <div class="intro__content">
+                    <div class="intro__content__container">
+                        <h2 class="intro__title">Ведущая <span class="intro__title__span">Виктория Двойнова</span></h2>
+                        <p class="intro__text">Веселый и заводной ведущий мероприятий, с тактичной и ненавязчивой
+                            манерой общения, приятным тембром голоса.В моем арсенале множество проведенных мероприятий,
+                            как частного, так и корпоративного характера. Мои развлекательные программы это -
+                            профессионально разработанный праздник с торжественным приветствием, яркими тостами и
+                            поздравлениями, веселой танцевально-игровой программой, а также интригующей развязкой. </p>
+                        <a href="tel:+79509171333" class="intro__btn btn-link">СВЯЖИТЕСЬ СО МНОЙ</a>
+                    </div>
+                </div>
+            </section> <!-- /intro -->
+
+            <!-- Services -->
+            <section class="services container">
+                <h2 class="services__title">Услуги</h2>
+                <div class="services__content">
+                    <article class="services__item">
+                        <picture>
+                            <!-- <source type='image/avif' srcset='./images/.avif'>
+    <source type='image/webp' srcset='./images/.webp'> -->
+                            <img class='service-pic' src='' alt=''>
+                        </picture>
+                        <div class="service-content">
+                            <h3 class="service-title">
+                                Корпоративные мероприятия
+                            </h3>
+                            <span class="service-price">
+                                от 8 000 руб.
+                            </span>
+                            <p class="service-text">
+                                Развлечения, конкурсы и лотереи. Убойная музыкальная программа. Танцы и еще раз танцы.
+                                Живые
+                                музыканты или диджей. Много драйва. Сплотим ваш коллектив в расслабленной атмосфере.
+                            </p>
+                        </div>
+                    </article>
+                    <article class="services__item">
+                        <picture>
+                            <!-- <source type='image/avif' srcset='./images/.avif'>
+    <source type='image/webp' srcset='./images/.webp'> -->
+                            <img class='service-pic' src='' alt=''>
+                        </picture>
+                        <div class="service-content">
+                            <h3 class="service-title">
+                                Свадебные торжества
+                            </h3>
+                            <span class="service-price">
+                                от 15 000 руб.
+                            </span>
+                            <p class="service-text">
+                                Свадьба — самый важный день в жизни, к организации которого нужно подойти со всей
+                                ответственностью. Мы украсим ваш праздник и поможем сделать его незабываемым. Уникальная
+                                свадебная программа.
+                            </p>
+                        </div>
+                    </article>
+                    <article class="services__item">
+                        <picture>
+                            <!-- <source type='image/avif' srcset='./images/.avif'>
+    <source type='image/webp' srcset='./images/.webp'> -->
+                            <img class='service-pic' src='' alt=''>
+                        </picture>
+                        <div class="service-content">
+                            <h3 class="service-title">
+                                Юбилеи, дни рождения
+                            </h3>
+                            <span class="service-price">
+                                от 12 000 руб.
+                            </span>
+                            <p class="service-text">
+                                Круглая дата — веха, бывающая в жизни каждого человека. Юбилей требует особого подхода и
+                                атмосферы. Специально разработанная программа для юбилеев и дней рождения,
+                                интеллигентно,
+                                по-семейному!
+                            </p>
+                        </div>
+                    </article>
+                </div>
+
+            </section><!-- /services -->
+
+            <!-- Separator -->
+            <section class='separator '>
+                <div class="container separator__inner">
+                    <h2 class="separator__title">Вам необходим ведущий?</h2>
+                    <a href="tel:+79509171333" class="separator__btn btn-link">СВЯЖИТЕСЬ СО МНОЙ</a>
+                </div>
+            </section> <!-- /separator -->
+            <!-- Gallery -->
+            <section class='gallery'>
+                <div class="container gallery__inner">
+                    <h2 class="gallery__title">Галерея работ</h2>
+                    <div id="photos"></div>
+                </div>
+            </section> <!-- /gallery -->
+        </main>
+
+        <footer class="footer">
+
+        </footer>
+    </div>
+
+
+    <!-- Модальные окна -->
+    <dialog id="modal-gallery">
+        <img id="modal-image" src="" alt="">
+        <div id="modal-controls">
+            <button id="prevImg">&lt;</button>
+            <button id="nextImg">&gt;</button>
+        </div>
+        <span id="modal-close">&times;</span>
+    </dialog>
+
+    <!-- JS -->
+    <script src="./script.js"></script>
+    <script src="./gallery.js"></script>
+</body>
+
+</html>
