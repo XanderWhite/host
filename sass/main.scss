@@ -12,11 +12,14 @@
   overflow: hidden;
 }
 
+@import "page_gallery";
+
 @import "common";
 @import "header";
 @import "intro";
 @import "services";
 @import "separator";
 @import "gallery";
+@import "reviews";
 
 @import "modal";

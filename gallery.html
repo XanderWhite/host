@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ведущий</title>
+
+    <link rel="stylesheet" href="./css/main.min.css">
+</head>
+
+<body>
+    <div class="page page_gallery">
+
+        <main class="main main_gallery">
+            <h1 class="main__title">Моя галерея</h1>
+            <a href="./index.html" class=" btn-link btn-link_pink">назад</a>
+
+            <div class='gallery gallery_page'>
+                <div class="container gallery__inner">
+                    <div id="photo"></div>
+                </div>
+            </div> <!-- /gallery -->
+
+        </main>
+
+    </div>
+
+        <!-- Модальные окна -->
+        <dialog id="modal-gallery">
+            <img id="modal-image" src="" alt="">
+            <div id="modal-controls">
+                <button id="prevImg">&lt;</button>
+                <button id="nextImg">&gt;</button>
+            </div>
+            <span id="modal-close">&times;</span>
+        </dialog>
+
+    <script src="./gallery.js"></script>
+</body>
+</html>

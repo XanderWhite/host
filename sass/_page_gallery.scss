@@ -1,0 +1,15 @@
+.page_gallery{
+    padding: 100px 0;
+    background-color: $color-dark;
+    color: $color-white;
+}
+
+.main_gallery{
+    display: flex ;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main__title{
+    margin-bottom: 30px;
+}

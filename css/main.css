@@ -153,6 +153,33 @@ dialog::backdrop {
   overflow: hidden;
 }
 
+.page_gallery {
+  padding: 100px 0;
+  background-color: #332a33;
+  color: #fff;
+}
+
+.main_gallery {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main__title {
+  margin-bottom: 30px;
+}
+
+.page_gallery {
+  background-color: #332a33;
+}
+
 .container {
   max-width: 1200px;
   width: 100%;
@@ -163,10 +190,26 @@ dialog::backdrop {
 .btn-link {
   border-radius: 5px;
 }
+.btn-link_pink {
+  background-color: #e04eb3;
+  border-radius: 5px;
+  padding: 15px 30px;
+  text-transform: uppercase;
+  color: #fff;
+}
+.btn-link_pink:hover {
+  color: black;
+  background-color: #fff;
+}
 
 .no-scroll {
   overflow: hidden; /* Отключает прокрутку страницы */
   height: 100%; /* Устанавливает высоту в 100%, чтобы предотвратить увеличение высоты */
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 30px;
 }
 
 .header {
@@ -296,24 +339,9 @@ dialog::backdrop {
   margin-bottom: 50px;
 }
 
-.intro__btn {
-  background-color: #e04eb3;
-  border-radius: 5px;
-  padding: 15px 30px;
-  text-transform: uppercase;
-}
-.intro__btn:hover {
-  color: black;
-  background-color: #fff;
-}
-
 .services {
   padding-top: 50px;
   padding-bottom: 50px;
-}
-.services__title {
-  text-align: center;
-  margin-bottom: 30px;
 }
 .services__content {
   display: grid;
@@ -333,8 +361,9 @@ dialog::backdrop {
   display: block;
   width: 100%;
   height: 3px;
-  bottom: -5px;
-  left: 0;
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
   background-color: #e04eb3;
   -webkit-transition: 0.3s;
   transition: 0.3s;
@@ -402,22 +431,39 @@ dialog::backdrop {
 }
 
 .gallery {
-  padding-top: 50px;
-  background-color: #fafafa;
-  margin-bottom: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  overflow: hidden;
+  position: relative;
 }
-.gallery__title {
-  margin-bottom: 30px;
-  text-align: center;
+.gallery_page {
+  background-color: transparent;
+}
+.gallery__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-#photos {
+#photo {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 10px;
+  margin-bottom: 30px;
 }
 
-.photos-img {
+.photo-img {
   width: 100%;
   aspect-ratio: 2/2;
   vertical-align: top;
@@ -427,10 +473,78 @@ dialog::backdrop {
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
-.photos-img:hover {
+.photo-img:hover {
   scale: 1.02;
   -webkit-box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.5);
           box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.5);
+}
+
+.gallery__link {
+  color: #332a33;
+}
+.gallery__link:hover {
+  background-color: #332a33;
+  color: #fff;
+}
+
+.reviews__inner {
+  margin-top: 50px;
+}
+
+.reviews__block {
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(3, 1fr);
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 50px;
+}
+
+.review {
+  display: grid;
+  grid-template-rows: subgrid;
+  grid-row: span 4;
+  gap: 10px;
+  justify-items: center;
+}
+
+.reviews-pic {
+  background-color: #e04eb3;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-top: 30px;
+}
+
+.review__subtitle {
+  font-style: italic;
+  font-weight: 300;
+  margin-bottom: 10px;
+  margin-top: -25px;
+  font-size: 14px;
+}
+
+.review__text {
+  background-color: #f2f2f2;
+  padding: 20px;
+  text-align: center;
+  position: relative;
+}
+.review__text::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: -12px;
+  left: 50%;
+  background-color: inherit;
+  -webkit-transform: translateX(-50%) rotate(45deg);
+      -ms-transform: translateX(-50%) rotate(45deg);
+          transform: translateX(-50%) rotate(45deg);
 }
 
 #modal-close {
@@ -468,8 +582,11 @@ dialog::backdrop {
   width: 100%;
   max-width: 1000px;
   max-height: 50%;
-  -webkit-transition: 0.1s;
-  transition: 0.1s;
+  height: auto;
+  -o-object-fit: contain;
+     object-fit: contain;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 #modal-controls {

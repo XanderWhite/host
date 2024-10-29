@@ -22,10 +22,12 @@ justify-content: center;
 }
 
 #modal-image {
-	width: 100%;
-	max-width: 1000px;
+    width: 100%;
+    max-width: 1000px;
     max-height: 50%;
-    transition: 0.1s;
+    height: auto;
+    object-fit: contain;
+    transition: 0.3s;
 }
 
 #modal-controls {

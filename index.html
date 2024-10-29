@@ -20,16 +20,16 @@
 
                 <nav class="nav" id="nav">
                     <ul class="menu">
-                        <li lass="menu__item">
+                        <li class="menu__item">
                             <a class="menu__link " href="#" data-scroll="#home">Главная</a>
                         </li>
-                        <li lass="menu__item">
+                        <li class="menu__item">
                             <a class="menu__link" href="#" data-scroll="#services">Услуги</a>
                         </li>
-                        <li lass="menu__item">
+                        <li class="menu__item">
                             <a class="menu__link" href="#" data-scroll="#reviews">Отзывы</a>
                         </li>
-                        <li lass="menu__item">
+                        <li class="menu__item">
                             <a class="menu__link" href="#" data-scroll="#contacts">Контакты</a>
                         </li>
                     </ul>
@@ -55,14 +55,14 @@
                             как частного, так и корпоративного характера. Мои развлекательные программы это -
                             профессионально разработанный праздник с торжественным приветствием, яркими тостами и
                             поздравлениями, веселой танцевально-игровой программой, а также интригующей развязкой. </p>
-                        <a href="tel:+79509171333" class="intro__btn btn-link">СВЯЖИТЕСЬ СО МНОЙ</a>
+                        <a href="tel:+79509171333" class=" btn-link btn-link_pink">СВЯЖИТЕСЬ СО МНОЙ</a>
                     </div>
                 </div>
             </section> <!-- /intro -->
 
             <!-- Services -->
             <section class="services container">
-                <h2 class="services__title">Услуги</h2>
+                <h2 class="title">Услуги</h2>
                 <div class="services__content">
                     <article class="services__item">
                         <picture>
@@ -139,10 +139,52 @@
             <!-- Gallery -->
             <section class='gallery'>
                 <div class="container gallery__inner">
-                    <h2 class="gallery__title">Галерея работ</h2>
-                    <div id="photos"></div>
+                    <h2 class="title">Галерея работ</h2>
+                    <div id="photo"></div>
+                    <a href="./gallery.html" class=" btn-link btn-link_pink gallery__link" id="more_photo">еще
+                        работы</a>
                 </div>
             </section> <!-- /gallery -->
+
+            <!-- Reviews -->
+            <section class='reviews'>
+                <div class="reviews__inner container">
+                    <h2 class="title">Отзывы</h2>
+
+                    <div class="reviews__block">
+                        <article class="review">
+                            <picture>
+                                <!-- <source type='image/avif' srcset='./images/.avif'>
+                                    <source type='image/webp' srcset='./images/.webp'> -->
+                                <img class='reviews-pic' src='' alt=''>
+                            </picture>
+    <h3 class="review__title">Алина Самойлова</h3>
+    <h4 class="review__subtitle">Свадьба</h4>
+    <p class="review__text">Все прошло просто замечательно! Потрясающий день, романтичный и жутко эмоциональный. И во многом это заслуга Макса. Спасибо тебе, ты лучший! Рекомендую "Чернику" своим знакомым и друзьям.</p>
+                        </article>
+                        <article class="review">
+                            <picture>
+                                <!-- <source type='image/avif' srcset='./images/.avif'>
+                                    <source type='image/webp' srcset='./images/.webp'> -->
+                                <img class='reviews-pic' src='' alt=''>
+                            </picture>
+    <h3 class="review__title">Илья Фадеев</h3>
+    <h4 class="review__subtitle">День рождения</h4>
+    <p class="review__text">Такого дня рождения у меня еще точно не было! Нет слов... Одни эмоции. Лучший день в моей жизни :) Все мои друзья и родные были поражены. Так небанально, интересно, драйвово и креативно. </p>
+                        </article>
+                        <article class="review">
+                            <picture>
+                                <!-- <source type='image/avif' srcset='./images/.avif'>
+                                    <source type='image/webp' srcset='./images/.webp'> -->
+                                <img class='reviews-pic' src='' alt=''>
+                            </picture>
+    <h3 class="review__title">Дмитрий Шубин</h3>
+    <h4 class="review__subtitle">Корпоратив</h4>
+    <p class="review__text">Спасибо огромное самому весёлому, креативному и просто лучшему ведущему! Наш самый корпоратив незабываемым благодаря ему! Спасибо за то, что ты был с нами. Твой талант безценен!</p>
+                        </article>
+                    </div>
+                </div>
+            </section> <!-- /reviews -->
         </main>
 
         <footer class="footer">
@@ -164,6 +206,7 @@
     <!-- JS -->
     <script src="./script.js"></script>
     <script src="./gallery.js"></script>
+    <script src="./reviews.js"></script>
 </body>
 
 </html>
